@@ -3,7 +3,10 @@
 #include <string.h>
 #include <math.h>
 #include <assert.h>
+#if defined(WIN32) || defined(_WIN32) || defined(WIN64) || defined(_WIN64)
+#else
 #include <unistd.h>
+#endif
 #include <float.h>
 #include <limits.h>
 #include <time.h>
@@ -13,7 +16,7 @@
 double what_time_is_it_now()
 {
     struct timespec now;
-    clock_gettime(CLOCK_REALTIME, &now);
+	timespec_get(&now, TIME_UTC);
     return now.tv_sec + now.tv_nsec*1e-9;
 }
 
@@ -62,7 +65,7 @@ void sorta_shuffle(void *arr, size_t n, size_t size, size_t sections)
         size_t start = n*i/sections;
         size_t end = n*(i+1)/sections;
         size_t num = end-start;
-        shuffle(arr+(start*size), num, size);
+        shuffle((char*)arr+(start*size), num, size);
     }
 }
 
@@ -72,9 +75,9 @@ void shuffle(void *arr, size_t n, size_t size)
     void *swp = calloc(1, size);
     for(i = 0; i < n-1; ++i){
         size_t j = i + rand()/(RAND_MAX / (n-i)+1);
-        memcpy(swp,          arr+(j*size), size);
-        memcpy(arr+(j*size), arr+(i*size), size);
-        memcpy(arr+(i*size), swp,          size);
+        memcpy(swp,          (char*)arr+(j*size), size);
+        memcpy((char*)arr+(j*size), (char*)arr+(i*size), size);
+        memcpy((char*)arr+(i*size), swp,          size);
     }
 }
 

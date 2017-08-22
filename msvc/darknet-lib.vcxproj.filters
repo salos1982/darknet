@@ -1,0 +1,779 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="cuda">
+      <UniqueIdentifier>{c3d444d3-6b54-4812-a59d-02f516c35840}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pthreads">
+      <UniqueIdentifier>{0378321c-f771-4111-a18d-c676cd8bcdb4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\activation_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\activations.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\avgpool_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\batchnorm_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blas.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\box.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\col2im.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\compare.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\connected_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\convolutional_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cost_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\crnn_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\crop_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cuda.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\data.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\deconvolutional_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\demo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\detection_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dropout_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gemm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gru_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\im2col.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\image.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\local_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lstm_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\matrix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\maxpool_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\network.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\normalization_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\option_list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\region_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\reorg_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\rnn_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\route_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\shortcut_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\softmax_layer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tree.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\cleanup.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\create.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\dll.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\errno.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\global.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_destroy.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_getaffinity_np.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_getdetachstate.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_getinheritsched.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_getname_np.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_getschedparam.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_getschedpolicy.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_getscope.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_getstackaddr.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_getstacksize.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_init.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_setaffinity_np.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_setdetachstate.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_setinheritsched.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_setname_np.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_setschedparam.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_setschedpolicy.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_setscope.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_setstackaddr.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_setstacksize.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_barrier_destroy.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_barrier_init.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_barrier_wait.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_barrierattr_destroy.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_barrierattr_getpshared.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_barrierattr_init.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_barrierattr_setpshared.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_cancel.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_cond_destroy.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_cond_init.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_cond_signal.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_cond_wait.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_condattr_destroy.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_condattr_getpshared.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_condattr_init.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_condattr_setpshared.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_delay_np.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_detach.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_equal.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_exit.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_getconcurrency.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_getname_np.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_getschedparam.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_getspecific.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_getunique_np.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_getw32threadhandle_np.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_join.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_key_create.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_key_delete.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_kill.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutex_consistent.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutex_destroy.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutex_init.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutex_lock.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutex_timedlock.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutex_trylock.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutex_unlock.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_destroy.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_getkind_np.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_getpshared.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_getrobust.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_gettype.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_init.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_setkind_np.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_setpshared.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_setrobust.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_settype.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_num_processors_np.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_once.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlock_destroy.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlock_init.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlock_rdlock.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlock_timedrdlock.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlock_timedwrlock.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlock_tryrdlock.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlock_trywrlock.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlock_unlock.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlock_wrlock.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlockattr_destroy.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlockattr_getpshared.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlockattr_init.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlockattr_setpshared.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_self.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_setaffinity.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_setcancelstate.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_setcanceltype.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_setconcurrency.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_setname_np.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_setschedparam.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_setspecific.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_spin_destroy.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_spin_init.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_spin_lock.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_spin_trylock.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_spin_unlock.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_testcancel.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_timechange_handler_np.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_timedjoin_np.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_tryjoin_np.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_win32_attach_detach_np.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_calloc.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_callUserDestroyRoutines.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_cond_check_need_init.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_getprocessors.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_is_attr.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_MCS_lock.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_mutex_check_need_init.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_new.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_processInitialize.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_processTerminate.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_relmillisecs.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_reuse.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_rwlock_cancelwrwait.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_rwlock_check_need_init.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_semwait.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_spinlock_check_need_init.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_threadDestroy.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_threadStart.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_throw.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_timespec.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_tkAssocCreate.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_tkAssocDestroy.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sched_get_priority_max.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sched_get_priority_min.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sched_getscheduler.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sched_setaffinity.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sched_setscheduler.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sched_yield.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_close.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_destroy.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_getvalue.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_init.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_open.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_post.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_post_multiple.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_timedwait.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_trywait.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_unlink.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_wait.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\signal.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\w32_CancelableWait.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\activation_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\activations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\avgpool_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\batchnorm_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\box.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\classifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\col2im.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\connected_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\convolutional_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cost_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\crnn_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\crop_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cuda.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\deconvolutional_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\demo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\detection_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\dropout_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gemm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gru_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\im2col.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\local_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lstm_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\maxpool_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\network.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\normalization_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\option_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\region_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\reorg_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\rnn_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\route_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\shortcut_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\softmax_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\stb_image_write.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\darknet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pthreads\_ptw32.h">
+      <Filter>pthreads</Filter>
+    </ClInclude>
+    <ClInclude Include="pthreads\config.h">
+      <Filter>pthreads</Filter>
+    </ClInclude>
+    <ClInclude Include="pthreads\context.h">
+      <Filter>pthreads</Filter>
+    </ClInclude>
+    <ClInclude Include="pthreads\implement.h">
+      <Filter>pthreads</Filter>
+    </ClInclude>
+    <ClInclude Include="pthreads\need_errno.h">
+      <Filter>pthreads</Filter>
+    </ClInclude>
+    <ClInclude Include="pthreads\pthread.h">
+      <Filter>pthreads</Filter>
+    </ClInclude>
+    <ClInclude Include="pthreads\sched.h">
+      <Filter>pthreads</Filter>
+    </ClInclude>
+    <ClInclude Include="pthreads\semaphore.h">
+      <Filter>pthreads</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\src\activation_kernels.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\avgpool_layer_kernels.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\blas_kernels.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\col2im_kernels.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\convolutional_kernels.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\crop_layer_kernels.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\deconvolutional_kernels.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\dropout_layer_kernels.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\im2col_kernels.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\maxpool_layer_kernels.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\network_kernels.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>

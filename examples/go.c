@@ -1,10 +1,22 @@
 #include "darknet.h"
 
+#ifndef _WIN32
 #include <unistd.h>
+#endif
+
+#ifdef _WIN32
+#define  popen _popen
+#define pclose _pclose
+#define sleep(time) Sleep(time * 1000)
+#endif
 
 int inverted = 1;
 int noi = 1;
+#ifndef _MSC_VER
 static const int nind = 2;
+#else
+#define nind 2
+#endif
 
 typedef struct {
     char **data;

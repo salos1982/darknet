@@ -226,17 +226,23 @@ void get_detection_boxes(layer l, int w, int h, float thresh, float **probs, box
 {
     int i,j,n;
     float *predictions = l.output;
+	//int count = l.side*l.side;
+	int count = l.w*l.h;
     //int per_cell = 5*num+classes;
-    for (i = 0; i < l.side*l.side; ++i){
-        int row = i / l.side;
-        int col = i % l.side;
+    for (i = 0; i < count; ++i){
+        //int row = i / l.side;
+        //int col = i % l.side;
+		int row = i / l.w;
+		int col = i % l.w;
         for(n = 0; n < l.n; ++n){
             int index = i*l.n + n;
-            int p_index = l.side*l.side*l.classes + i*l.n + n;
+            int p_index = count*l.classes + i*l.n + n;
             float scale = predictions[p_index];
-            int box_index = l.side*l.side*(l.classes + l.n) + (i*l.n + n)*4;
-            boxes[index].x = (predictions[box_index + 0] + col) / l.side * w;
-            boxes[index].y = (predictions[box_index + 1] + row) / l.side * h;
+            int box_index = count*(l.classes + l.n) + (i*l.n + n)*4;
+            //boxes[index].x = (predictions[box_index + 0] + col) / l.side * w;
+            //boxes[index].y = (predictions[box_index + 1] + row) / l.side * h;
+			boxes[index].x = (predictions[box_index + 0] + col) / l.w * w;
+			boxes[index].y = (predictions[box_index + 1] + row) / l.w * h;
             boxes[index].w = pow(predictions[box_index + 2], (l.sqrt?2:1)) * w;
             boxes[index].h = pow(predictions[box_index + 3], (l.sqrt?2:1)) * h;
             for(j = 0; j < l.classes; ++j){

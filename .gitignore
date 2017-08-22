@@ -25,3 +25,6 @@ ehthumbs.db
 Icon?
 Thumbs.db
 *.swp
+/msvc/dakrnet/x64
+/msvc/x64
+/msvc/darknet.VC.db

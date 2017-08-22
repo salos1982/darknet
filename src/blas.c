@@ -6,6 +6,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+#ifdef _MSC_VER
+#ifdef OUT
+#undef OUT
+#endif
+#endif
+
 void reorg_cpu(float *x, int w, int h, int c, int batch, int stride, int forward, float *out)
 {
     int b,i,j,k;
