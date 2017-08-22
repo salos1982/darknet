@@ -1,3 +1,5 @@
+This is windows port of darknet (yolo v2). 
+
 ![Darknet Logo](http://pjreddie.com/media/files/darknet-black-small.png)
 
 #Darknet#
